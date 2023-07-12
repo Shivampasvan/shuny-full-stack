@@ -24,6 +24,10 @@ const AddUser = () => {
 
   };
 
+  const handleView = (id) => {
+
+  };
+
   return (
     <>
       <div>
