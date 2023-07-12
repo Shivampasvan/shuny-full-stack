@@ -21,7 +21,7 @@ const AddUser = () => {
   };
 
   const handleUpdate = (id) => {
-    
+
   };
 
   return (
@@ -54,7 +54,7 @@ const AddUser = () => {
               </Box>
 
               <div style={{ display: "flex", gap: "20px" }}>
-                <Button>View</Button>
+                <Button onClick={()=>handleView()}>View</Button>
                 <Button onClick={() => handleUpdate(el._id)}>Edit</Button>
                 <Button onClick={() => handleDelete(el._id)}>Delete</Button>
               </div>
