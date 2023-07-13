@@ -17,19 +17,21 @@ const UserDetails = () => {
 
   return (
     <>
-    <Navbart />
+      <Navbart />
       <div
         style={{
           border: "2px solid silver",
           borderRadius: "10px",
-          width: "80%",
-          margin: "auto",
-          margin: "20px auto",
-          padding: "10px",
+          width: "40%",
+          margin: "60px auto",
+          padding: "50px",
           justifyContent: "space-between",
           fontWeight: "600",
           fontSize: "20px",
-        }}>
+          boxShadow:
+            "RGB(110 110 255) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
+        }}
+      >
         <Box>
           <Text>ID - {userdetails?._id}</Text>
         </Box>
