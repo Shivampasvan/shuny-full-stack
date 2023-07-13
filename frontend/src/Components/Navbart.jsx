@@ -4,12 +4,12 @@ import { Button, Box } from "@chakra-ui/react";
 import { useDispatch } from "react-redux";
 import { conditionUpdate } from "../Redux/UserReducer/action";
 
-const Navbar = () => {
+const Navbart = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch()
   const handleAdd = () => {
     dispatch(conditionUpdate())
-    navigate("/addorupdate")
+    navigate("/")
   }
   return (
     <>
@@ -35,11 +35,11 @@ const Navbar = () => {
           }}
           onClick={handleAdd}
         >
-          Add User
+          GO HOME
         </Button>
       </Box>
     </>
   );
 };
 
-export default Navbar;
+export default Navbart;

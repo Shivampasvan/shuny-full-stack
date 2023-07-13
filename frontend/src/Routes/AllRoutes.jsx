@@ -1,14 +1,16 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import UsersList from "../Pages/UsersList";
-import AddUser from "../Pages/AddUser";
+import UserDetails from "../Pages/UserDetails";
+import AddUpdate from "../Pages/AddUpdate";
 
 const AllRoutes = () => {
   return (
     <>
       <Routes>
         <Route path="/" element={<UsersList />} />
-        <Route path="/adduser" element={<AddUser />} />
+        <Route path="/userdetails" element={<UserDetails />} />
+        <Route path="/addorupdate" element={<AddUpdate/>} />
       </Routes>
     </>
   );
